@@ -5,15 +5,20 @@
 #ifndef LOGS_LOGGER_H
 #define LOGS_LOGGER_H
 
-#include <iostream>;
+#include <iostream>
+
+#include "message/ILogMessage.h"
+#include "message/RawLogMessage.h"
 
 using namespace std;
 
 
 class Logger {
 public:
-    void logMessage(string message);
+    void info(string message);
 
+private:
+    void log(ILogMessage *message);
 };
 
 

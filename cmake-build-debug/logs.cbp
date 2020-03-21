@@ -80,16 +80,25 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/Logger.cpp">
+		<Unit filename="/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/Logger.cpp">
 			<Option target="logs"/>
 		</Unit>
-		<Unit filename="/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/Logger.h">
+		<Unit filename="/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/Logger.h">
 			<Option target="logs"/>
 		</Unit>
-		<Unit filename="/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/LoggerFactory.cpp">
+		<Unit filename="/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/LoggerFactory.cpp">
 			<Option target="logs"/>
 		</Unit>
-		<Unit filename="/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/LoggerFactory.h">
+		<Unit filename="/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/LoggerFactory.h">
+			<Option target="logs"/>
+		</Unit>
+		<Unit filename="/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/message/ILogMessage.h">
+			<Option target="logs"/>
+		</Unit>
+		<Unit filename="/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/message/RawLogMessage.cpp">
+			<Option target="logs"/>
+		</Unit>
+		<Unit filename="/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/message/RawLogMessage.h">
 			<Option target="logs"/>
 		</Unit>
 		<Unit filename="/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/main.cpp">

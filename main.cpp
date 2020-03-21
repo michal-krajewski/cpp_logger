@@ -1,11 +1,11 @@
 #include <iostream>
-#include "LoggerFactory.h"
+#include "logger/LoggerFactory.h"
 
 int main() {
 
     Logger logger = LoggerFactory::getLogger();
 
-    logger.logMessage("test massage");
+    logger.info("test info message");
 
     std::cout << "Hello, World!" << std::endl;
     return 0;

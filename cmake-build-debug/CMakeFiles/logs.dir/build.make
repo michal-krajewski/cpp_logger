@@ -70,47 +70,62 @@ CMakeFiles/logs.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/logs.dir/main.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/atreses/Documents/Uczelnia/pw/Cpp/logs/main.cpp -o CMakeFiles/logs.dir/main.cpp.s
 
-CMakeFiles/logs.dir/Logger.cpp.o: CMakeFiles/logs.dir/flags.make
-CMakeFiles/logs.dir/Logger.cpp.o: ../Logger.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/logs.dir/Logger.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/logs.dir/Logger.cpp.o -c /Users/atreses/Documents/Uczelnia/pw/Cpp/logs/Logger.cpp
+CMakeFiles/logs.dir/logger/Logger.cpp.o: CMakeFiles/logs.dir/flags.make
+CMakeFiles/logs.dir/logger/Logger.cpp.o: ../logger/Logger.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/logs.dir/logger/Logger.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/logs.dir/logger/Logger.cpp.o -c /Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/Logger.cpp
 
-CMakeFiles/logs.dir/Logger.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/logs.dir/Logger.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/atreses/Documents/Uczelnia/pw/Cpp/logs/Logger.cpp > CMakeFiles/logs.dir/Logger.cpp.i
+CMakeFiles/logs.dir/logger/Logger.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/logs.dir/logger/Logger.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/Logger.cpp > CMakeFiles/logs.dir/logger/Logger.cpp.i
 
-CMakeFiles/logs.dir/Logger.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/logs.dir/Logger.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/atreses/Documents/Uczelnia/pw/Cpp/logs/Logger.cpp -o CMakeFiles/logs.dir/Logger.cpp.s
+CMakeFiles/logs.dir/logger/Logger.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/logs.dir/logger/Logger.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/Logger.cpp -o CMakeFiles/logs.dir/logger/Logger.cpp.s
 
-CMakeFiles/logs.dir/LoggerFactory.cpp.o: CMakeFiles/logs.dir/flags.make
-CMakeFiles/logs.dir/LoggerFactory.cpp.o: ../LoggerFactory.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/logs.dir/LoggerFactory.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/logs.dir/LoggerFactory.cpp.o -c /Users/atreses/Documents/Uczelnia/pw/Cpp/logs/LoggerFactory.cpp
+CMakeFiles/logs.dir/logger/LoggerFactory.cpp.o: CMakeFiles/logs.dir/flags.make
+CMakeFiles/logs.dir/logger/LoggerFactory.cpp.o: ../logger/LoggerFactory.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/logs.dir/logger/LoggerFactory.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/logs.dir/logger/LoggerFactory.cpp.o -c /Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/LoggerFactory.cpp
 
-CMakeFiles/logs.dir/LoggerFactory.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/logs.dir/LoggerFactory.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/atreses/Documents/Uczelnia/pw/Cpp/logs/LoggerFactory.cpp > CMakeFiles/logs.dir/LoggerFactory.cpp.i
+CMakeFiles/logs.dir/logger/LoggerFactory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/logs.dir/logger/LoggerFactory.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/LoggerFactory.cpp > CMakeFiles/logs.dir/logger/LoggerFactory.cpp.i
 
-CMakeFiles/logs.dir/LoggerFactory.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/logs.dir/LoggerFactory.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/atreses/Documents/Uczelnia/pw/Cpp/logs/LoggerFactory.cpp -o CMakeFiles/logs.dir/LoggerFactory.cpp.s
+CMakeFiles/logs.dir/logger/LoggerFactory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/logs.dir/logger/LoggerFactory.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/LoggerFactory.cpp -o CMakeFiles/logs.dir/logger/LoggerFactory.cpp.s
+
+CMakeFiles/logs.dir/logger/message/RawLogMessage.cpp.o: CMakeFiles/logs.dir/flags.make
+CMakeFiles/logs.dir/logger/message/RawLogMessage.cpp.o: ../logger/message/RawLogMessage.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/logs.dir/logger/message/RawLogMessage.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/logs.dir/logger/message/RawLogMessage.cpp.o -c /Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/message/RawLogMessage.cpp
+
+CMakeFiles/logs.dir/logger/message/RawLogMessage.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/logs.dir/logger/message/RawLogMessage.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/message/RawLogMessage.cpp > CMakeFiles/logs.dir/logger/message/RawLogMessage.cpp.i
+
+CMakeFiles/logs.dir/logger/message/RawLogMessage.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/logs.dir/logger/message/RawLogMessage.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/message/RawLogMessage.cpp -o CMakeFiles/logs.dir/logger/message/RawLogMessage.cpp.s
 
 # Object files for target logs
 logs_OBJECTS = \
 "CMakeFiles/logs.dir/main.cpp.o" \
-"CMakeFiles/logs.dir/Logger.cpp.o" \
-"CMakeFiles/logs.dir/LoggerFactory.cpp.o"
+"CMakeFiles/logs.dir/logger/Logger.cpp.o" \
+"CMakeFiles/logs.dir/logger/LoggerFactory.cpp.o" \
+"CMakeFiles/logs.dir/logger/message/RawLogMessage.cpp.o"
 
 # External object files for target logs
 logs_EXTERNAL_OBJECTS =
 
 logs: CMakeFiles/logs.dir/main.cpp.o
-logs: CMakeFiles/logs.dir/Logger.cpp.o
-logs: CMakeFiles/logs.dir/LoggerFactory.cpp.o
+logs: CMakeFiles/logs.dir/logger/Logger.cpp.o
+logs: CMakeFiles/logs.dir/logger/LoggerFactory.cpp.o
+logs: CMakeFiles/logs.dir/logger/message/RawLogMessage.cpp.o
 logs: CMakeFiles/logs.dir/build.make
 logs: CMakeFiles/logs.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable logs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable logs"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/logs.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

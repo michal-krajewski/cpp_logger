@@ -6,25 +6,19 @@
 
 #IncludeRegexTransform: 
 
-/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/Logger.cpp
-Logger.h
-/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/Logger.h
-
-/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/Logger.h
+/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/message/ILogMessage.h
 iostream
 -
 
-/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/LoggerFactory.cpp
-LoggerFactory.h
-/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/LoggerFactory.h
-
-/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/LoggerFactory.h
-Logger.h
-/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/Logger.h
-
-/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/main.cpp
-iostream
+/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/message/RawLogMessage.cpp
+RawLogMessage.h
+/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/message/RawLogMessage.h
+utility
 -
-LoggerFactory.h
-/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/LoggerFactory.h
+
+/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/message/RawLogMessage.h
+ILogMessage.h
+/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/message/ILogMessage.h
+iostream
+/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/message/iostream
 

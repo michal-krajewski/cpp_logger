@@ -123,59 +123,86 @@ logs/fast:
 	$(MAKE) -f CMakeFiles/logs.dir/build.make CMakeFiles/logs.dir/build
 .PHONY : logs/fast
 
-Logger.o: Logger.cpp.o
+logger/Logger.o: logger/Logger.cpp.o
 
-.PHONY : Logger.o
-
-# target to build an object file
-Logger.cpp.o:
-	$(MAKE) -f CMakeFiles/logs.dir/build.make CMakeFiles/logs.dir/Logger.cpp.o
-.PHONY : Logger.cpp.o
-
-Logger.i: Logger.cpp.i
-
-.PHONY : Logger.i
-
-# target to preprocess a source file
-Logger.cpp.i:
-	$(MAKE) -f CMakeFiles/logs.dir/build.make CMakeFiles/logs.dir/Logger.cpp.i
-.PHONY : Logger.cpp.i
-
-Logger.s: Logger.cpp.s
-
-.PHONY : Logger.s
-
-# target to generate assembly for a file
-Logger.cpp.s:
-	$(MAKE) -f CMakeFiles/logs.dir/build.make CMakeFiles/logs.dir/Logger.cpp.s
-.PHONY : Logger.cpp.s
-
-LoggerFactory.o: LoggerFactory.cpp.o
-
-.PHONY : LoggerFactory.o
+.PHONY : logger/Logger.o
 
 # target to build an object file
-LoggerFactory.cpp.o:
-	$(MAKE) -f CMakeFiles/logs.dir/build.make CMakeFiles/logs.dir/LoggerFactory.cpp.o
-.PHONY : LoggerFactory.cpp.o
+logger/Logger.cpp.o:
+	$(MAKE) -f CMakeFiles/logs.dir/build.make CMakeFiles/logs.dir/logger/Logger.cpp.o
+.PHONY : logger/Logger.cpp.o
 
-LoggerFactory.i: LoggerFactory.cpp.i
+logger/Logger.i: logger/Logger.cpp.i
 
-.PHONY : LoggerFactory.i
+.PHONY : logger/Logger.i
 
 # target to preprocess a source file
-LoggerFactory.cpp.i:
-	$(MAKE) -f CMakeFiles/logs.dir/build.make CMakeFiles/logs.dir/LoggerFactory.cpp.i
-.PHONY : LoggerFactory.cpp.i
+logger/Logger.cpp.i:
+	$(MAKE) -f CMakeFiles/logs.dir/build.make CMakeFiles/logs.dir/logger/Logger.cpp.i
+.PHONY : logger/Logger.cpp.i
 
-LoggerFactory.s: LoggerFactory.cpp.s
+logger/Logger.s: logger/Logger.cpp.s
 
-.PHONY : LoggerFactory.s
+.PHONY : logger/Logger.s
 
 # target to generate assembly for a file
-LoggerFactory.cpp.s:
-	$(MAKE) -f CMakeFiles/logs.dir/build.make CMakeFiles/logs.dir/LoggerFactory.cpp.s
-.PHONY : LoggerFactory.cpp.s
+logger/Logger.cpp.s:
+	$(MAKE) -f CMakeFiles/logs.dir/build.make CMakeFiles/logs.dir/logger/Logger.cpp.s
+.PHONY : logger/Logger.cpp.s
+
+logger/LoggerFactory.o: logger/LoggerFactory.cpp.o
+
+.PHONY : logger/LoggerFactory.o
+
+# target to build an object file
+logger/LoggerFactory.cpp.o:
+	$(MAKE) -f CMakeFiles/logs.dir/build.make CMakeFiles/logs.dir/logger/LoggerFactory.cpp.o
+.PHONY : logger/LoggerFactory.cpp.o
+
+logger/LoggerFactory.i: logger/LoggerFactory.cpp.i
+
+.PHONY : logger/LoggerFactory.i
+
+# target to preprocess a source file
+logger/LoggerFactory.cpp.i:
+	$(MAKE) -f CMakeFiles/logs.dir/build.make CMakeFiles/logs.dir/logger/LoggerFactory.cpp.i
+.PHONY : logger/LoggerFactory.cpp.i
+
+logger/LoggerFactory.s: logger/LoggerFactory.cpp.s
+
+.PHONY : logger/LoggerFactory.s
+
+# target to generate assembly for a file
+logger/LoggerFactory.cpp.s:
+	$(MAKE) -f CMakeFiles/logs.dir/build.make CMakeFiles/logs.dir/logger/LoggerFactory.cpp.s
+.PHONY : logger/LoggerFactory.cpp.s
+
+logger/message/RawLogMessage.o: logger/message/RawLogMessage.cpp.o
+
+.PHONY : logger/message/RawLogMessage.o
+
+# target to build an object file
+logger/message/RawLogMessage.cpp.o:
+	$(MAKE) -f CMakeFiles/logs.dir/build.make CMakeFiles/logs.dir/logger/message/RawLogMessage.cpp.o
+.PHONY : logger/message/RawLogMessage.cpp.o
+
+logger/message/RawLogMessage.i: logger/message/RawLogMessage.cpp.i
+
+.PHONY : logger/message/RawLogMessage.i
+
+# target to preprocess a source file
+logger/message/RawLogMessage.cpp.i:
+	$(MAKE) -f CMakeFiles/logs.dir/build.make CMakeFiles/logs.dir/logger/message/RawLogMessage.cpp.i
+.PHONY : logger/message/RawLogMessage.cpp.i
+
+logger/message/RawLogMessage.s: logger/message/RawLogMessage.cpp.s
+
+.PHONY : logger/message/RawLogMessage.s
+
+# target to generate assembly for a file
+logger/message/RawLogMessage.cpp.s:
+	$(MAKE) -f CMakeFiles/logs.dir/build.make CMakeFiles/logs.dir/logger/message/RawLogMessage.cpp.s
+.PHONY : logger/message/RawLogMessage.cpp.s
 
 main.o: main.cpp.o
 
@@ -213,12 +240,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... logs"
-	@echo "... Logger.o"
-	@echo "... Logger.i"
-	@echo "... Logger.s"
-	@echo "... LoggerFactory.o"
-	@echo "... LoggerFactory.i"
-	@echo "... LoggerFactory.s"
+	@echo "... logger/Logger.o"
+	@echo "... logger/Logger.i"
+	@echo "... logger/Logger.s"
+	@echo "... logger/LoggerFactory.o"
+	@echo "... logger/LoggerFactory.i"
+	@echo "... logger/LoggerFactory.s"
+	@echo "... logger/message/RawLogMessage.o"
+	@echo "... logger/message/RawLogMessage.i"
+	@echo "... logger/message/RawLogMessage.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
