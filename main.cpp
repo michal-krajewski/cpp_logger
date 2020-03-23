@@ -17,13 +17,5 @@ int main() {
     logger.warn("warn message");
     logger.error("error message");
 
-
-//    auto *types = new vector<LogType>;
-//    types->push_back(INFO);
-//    types->push_back(WARN);
-//    ConsoleLogDistributor *consoleLogDistributor = new ConsoleLogDistributor(types);
-//
-//    cout << consoleLogDistributor->supports(WARN) << endl;
-
     return 0;
 }

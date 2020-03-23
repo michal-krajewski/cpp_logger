@@ -11,6 +11,7 @@ CMakeFiles/logs.dir/logger/LoggerFactory.cpp.o: ../logger/Logger.h
 CMakeFiles/logs.dir/logger/LoggerFactory.cpp.o: ../logger/LoggerFactory.cpp
 CMakeFiles/logs.dir/logger/LoggerFactory.cpp.o: ../logger/LoggerFactory.h
 CMakeFiles/logs.dir/logger/LoggerFactory.cpp.o: ../logger/distribution/ConsoleLogDistributor.h
+CMakeFiles/logs.dir/logger/LoggerFactory.cpp.o: ../logger/distribution/FileLogDistributor.h
 CMakeFiles/logs.dir/logger/LoggerFactory.cpp.o: ../logger/distribution/ILogDistributor.h
 CMakeFiles/logs.dir/logger/LoggerFactory.cpp.o: ../logger/message/ILogMessage.h
 CMakeFiles/logs.dir/logger/LoggerFactory.cpp.o: ../logger/message/RawLogMessage.h
@@ -19,6 +20,11 @@ CMakeFiles/logs.dir/logger/distribution/ConsoleLogDistributor.cpp.o: ../logger/d
 CMakeFiles/logs.dir/logger/distribution/ConsoleLogDistributor.cpp.o: ../logger/distribution/ConsoleLogDistributor.h
 CMakeFiles/logs.dir/logger/distribution/ConsoleLogDistributor.cpp.o: ../logger/distribution/ILogDistributor.h
 CMakeFiles/logs.dir/logger/distribution/ConsoleLogDistributor.cpp.o: ../logger/message/ILogMessage.h
+
+CMakeFiles/logs.dir/logger/distribution/FileLogDistributor.cpp.o: ../logger/distribution/FileLogDistributor.cpp
+CMakeFiles/logs.dir/logger/distribution/FileLogDistributor.cpp.o: ../logger/distribution/FileLogDistributor.h
+CMakeFiles/logs.dir/logger/distribution/FileLogDistributor.cpp.o: ../logger/distribution/ILogDistributor.h
+CMakeFiles/logs.dir/logger/distribution/FileLogDistributor.cpp.o: ../logger/message/ILogMessage.h
 
 CMakeFiles/logs.dir/logger/message/RawLogMessage.cpp.o: ../logger/message/ILogMessage.h
 CMakeFiles/logs.dir/logger/message/RawLogMessage.cpp.o: ../logger/message/RawLogMessage.cpp

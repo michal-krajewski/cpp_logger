@@ -4,6 +4,7 @@
 
 #include "LoggerFactory.h"
 #include "distribution/ConsoleLogDistributor.h"
+#include "distribution/FileLogDistributor.h"
 
 Logger LoggerFactory::getLogger() {
     auto *supportedTypes = new vector<LogType>;
@@ -12,6 +13,17 @@ Logger LoggerFactory::getLogger() {
 
     Logger logger;
     logger.addDistributor(new ConsoleLogDistributor(supportedTypes));
+
+    auto *supportedFileLogDistributorTypes = new vector<LogType>;
+    supportedFileLogDistributorTypes->push_back(INFO);
+    supportedFileLogDistributorTypes->push_back(DEBUG);
+
+    logger.addDistributor(
+            new FileLogDistributor(
+                    supportedFileLogDistributorTypes,
+                    "/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/resources/log.txt"
+            )
+    );
 
     return logger;
 }
