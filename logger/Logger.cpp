@@ -4,6 +4,9 @@
 
 #include "Logger.h"
 
+Logger::Logger() {
+
+}
 
 void Logger::info(string message) {
     ILogMessage *msg = new RawLogMessage(message, INFO);
@@ -11,5 +14,13 @@ void Logger::info(string message) {
 }
 
 void Logger::log(ILogMessage *message) {
-    cout << "Logger: [" << message->getType() << "] " << message->getMessage() << endl; //TODO: create getType toString method
+    for_each(distributors.begin(), distributors.end(), [&message](ILogDistributor *dist) {
+        if (dist->supports(message->getType())) {
+            dist->persistLog(message);
+        }
+    });
+}
+
+void Logger::addDistributor(ILogDistributor *distributor) {
+    this->distributors.push_back(distributor);
 }

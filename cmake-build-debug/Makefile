@@ -177,6 +177,33 @@ logger/LoggerFactory.cpp.s:
 	$(MAKE) -f CMakeFiles/logs.dir/build.make CMakeFiles/logs.dir/logger/LoggerFactory.cpp.s
 .PHONY : logger/LoggerFactory.cpp.s
 
+logger/distribution/ConsoleLogDistributor.o: logger/distribution/ConsoleLogDistributor.cpp.o
+
+.PHONY : logger/distribution/ConsoleLogDistributor.o
+
+# target to build an object file
+logger/distribution/ConsoleLogDistributor.cpp.o:
+	$(MAKE) -f CMakeFiles/logs.dir/build.make CMakeFiles/logs.dir/logger/distribution/ConsoleLogDistributor.cpp.o
+.PHONY : logger/distribution/ConsoleLogDistributor.cpp.o
+
+logger/distribution/ConsoleLogDistributor.i: logger/distribution/ConsoleLogDistributor.cpp.i
+
+.PHONY : logger/distribution/ConsoleLogDistributor.i
+
+# target to preprocess a source file
+logger/distribution/ConsoleLogDistributor.cpp.i:
+	$(MAKE) -f CMakeFiles/logs.dir/build.make CMakeFiles/logs.dir/logger/distribution/ConsoleLogDistributor.cpp.i
+.PHONY : logger/distribution/ConsoleLogDistributor.cpp.i
+
+logger/distribution/ConsoleLogDistributor.s: logger/distribution/ConsoleLogDistributor.cpp.s
+
+.PHONY : logger/distribution/ConsoleLogDistributor.s
+
+# target to generate assembly for a file
+logger/distribution/ConsoleLogDistributor.cpp.s:
+	$(MAKE) -f CMakeFiles/logs.dir/build.make CMakeFiles/logs.dir/logger/distribution/ConsoleLogDistributor.cpp.s
+.PHONY : logger/distribution/ConsoleLogDistributor.cpp.s
+
 logger/message/RawLogMessage.o: logger/message/RawLogMessage.cpp.o
 
 .PHONY : logger/message/RawLogMessage.o
@@ -246,6 +273,9 @@ help:
 	@echo "... logger/LoggerFactory.o"
 	@echo "... logger/LoggerFactory.i"
 	@echo "... logger/LoggerFactory.s"
+	@echo "... logger/distribution/ConsoleLogDistributor.o"
+	@echo "... logger/distribution/ConsoleLogDistributor.i"
+	@echo "... logger/distribution/ConsoleLogDistributor.s"
 	@echo "... logger/message/RawLogMessage.o"
 	@echo "... logger/message/RawLogMessage.i"
 	@echo "... logger/message/RawLogMessage.s"

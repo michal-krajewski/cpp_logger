@@ -14,12 +14,12 @@ using namespace std;
 class RawLogMessage : public ILogMessage {
 public:
     string getMessage() override;
-    MessageType getType() override;
-    RawLogMessage(string message, MessageType messageType);
+    LogType getType() override;
+    RawLogMessage(string message, LogType messageType);
 
 private:
     string message;
-    MessageType messageType;
+    LogType messageType;
 };
 
 

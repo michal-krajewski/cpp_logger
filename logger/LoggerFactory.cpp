@@ -3,7 +3,12 @@
 //
 
 #include "LoggerFactory.h"
+#include "distribution/ConsoleLogDistributor.h"
 
 Logger LoggerFactory::getLogger() {
-    return Logger();
+    Logger logger;
+    ILogDistributor *consoleLogDistributor = new ConsoleLogDistributor();
+    logger.addDistributor(consoleLogDistributor);
+
+    return logger;
 }

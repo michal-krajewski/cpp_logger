@@ -6,6 +6,46 @@
 
 #IncludeRegexTransform: 
 
+/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/Logger.cpp
+Logger.h
+/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/Logger.h
+
+/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/Logger.h
+iostream
+-
+vector
+-
+message/ILogMessage.h
+/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/message/ILogMessage.h
+message/RawLogMessage.h
+/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/message/RawLogMessage.h
+distribution/ILogDistributor.h
+/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/distribution/ILogDistributor.h
+
+/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/LoggerFactory.cpp
+LoggerFactory.h
+/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/LoggerFactory.h
+distribution/ConsoleLogDistributor.h
+/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/distribution/ConsoleLogDistributor.h
+
+/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/LoggerFactory.h
+Logger.h
+/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/Logger.h
+
+/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/distribution/ConsoleLogDistributor.cpp
+ConsoleLogDistributor.h
+/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/distribution/ConsoleLogDistributor.h
+iostream
+-
+
+/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/distribution/ConsoleLogDistributor.h
+ILogDistributor.h
+/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/distribution/ILogDistributor.h
+
+/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/distribution/ILogDistributor.h
+../message/ILogMessage.h
+/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/message/ILogMessage.h
+
 /Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/message/ILogMessage.h
 iostream
 -
@@ -21,4 +61,10 @@ ILogMessage.h
 /Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/message/ILogMessage.h
 iostream
 /Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/message/iostream
+
+/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/main.cpp
+iostream
+-
+logger/LoggerFactory.h
+/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/LoggerFactory.h
 

@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/logs.dir/logger/Logger.cpp.o"
   "CMakeFiles/logs.dir/logger/LoggerFactory.cpp.o"
+  "CMakeFiles/logs.dir/logger/distribution/ConsoleLogDistributor.cpp.o"
   "CMakeFiles/logs.dir/logger/message/RawLogMessage.cpp.o"
   "CMakeFiles/logs.dir/main.cpp.o"
   "logs"

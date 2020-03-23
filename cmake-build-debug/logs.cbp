@@ -92,6 +92,15 @@
 		<Unit filename="/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/LoggerFactory.h">
 			<Option target="logs"/>
 		</Unit>
+		<Unit filename="/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/distribution/ConsoleLogDistributor.cpp">
+			<Option target="logs"/>
+		</Unit>
+		<Unit filename="/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/distribution/ConsoleLogDistributor.h">
+			<Option target="logs"/>
+		</Unit>
+		<Unit filename="/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/distribution/ILogDistributor.h">
+			<Option target="logs"/>
+		</Unit>
 		<Unit filename="/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/message/ILogMessage.h">
 			<Option target="logs"/>
 		</Unit>

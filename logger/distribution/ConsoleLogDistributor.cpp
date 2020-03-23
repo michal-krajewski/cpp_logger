@@ -1,0 +1,21 @@
+//
+// Created by Atreses on 22/03/2020.
+//
+
+#include "ConsoleLogDistributor.h"
+
+#include <iostream>
+
+using namespace std;
+
+bool ConsoleLogDistributor::supports(LogType logType) {
+    return true; //TODO: fix to check
+}
+
+void ConsoleLogDistributor::persistLog(ILogMessage *message) {
+    cout << message->getMessage() << endl;
+}
+
+//ConsoleLogDistributor::ConsoleLogDistributor(LogType *supportedTypes) {
+//    this->supportedTypes = supportedTypes;
+//}

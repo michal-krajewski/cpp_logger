@@ -6,15 +6,16 @@
 
 #include <utility>
 
-RawLogMessage::RawLogMessage(string message, MessageType messageType) {
+RawLogMessage::RawLogMessage(string message, LogType messageType) {
     this->message = std::move(message);
     this->messageType = messageType;
 }
 
 string RawLogMessage::getMessage() {
-    return this->message;
+    string fullMessage = "[" + ILogMessage::getTextForEnum(this->messageType) + "] " + this->message;
+    return fullMessage;
 }
 
-MessageType RawLogMessage::getType() {
+LogType RawLogMessage::getType() {
     return this->messageType;
 }

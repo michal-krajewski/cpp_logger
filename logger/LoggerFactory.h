@@ -5,7 +5,7 @@
 #ifndef LOGS_LOGGERFACTORY_H
 #define LOGS_LOGGERFACTORY_H
 
-#include "Logger.h";
+#include "Logger.h"
 
 class LoggerFactory {
 public:

@@ -9,12 +9,18 @@
 
 using namespace std;
 
-enum MessageType {INFO, ERROR, WARN, DEBUG};
+enum LogType {INFO, ERROR, WARN, DEBUG};
+static char *enumStrings[] = {"INFO", "ERROR", "WARN", "DEBUG"};
 
 class ILogMessage {
 public:
     virtual string getMessage() = 0;
-    virtual MessageType getType() = 0;
+    virtual LogType getType() = 0;
+
+protected:
+    static string getTextForEnum(int enumValue) {
+        return enumStrings[enumValue];
+    };
 };
 
 
