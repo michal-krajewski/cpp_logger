@@ -4,13 +4,30 @@
 
 #include "Logger.h"
 
+#include <utility>
+
 Logger::Logger() {
 
 }
 
 void Logger::info(string message) {
-    ILogMessage *msg = new RawLogMessage(message, INFO);
-    log(msg); //TODO: fix memory leak?
+    ILogMessage *msg = this->prepareMessage(std::move(message), INFO);
+    log(msg);
+}
+
+void Logger::debug(string message) {
+    ILogMessage *msg = this->prepareMessage(std::move(message), DEBUG);
+    log(msg);
+}
+
+void Logger::error(string message) {
+    ILogMessage *msg = this->prepareMessage(std::move(message), ERROR);
+    log(msg);
+}
+
+void Logger::warn(string message) {
+    ILogMessage *msg = this->prepareMessage(std::move(message), WARN);
+    log(msg);
 }
 
 void Logger::log(ILogMessage *message) {
@@ -19,8 +36,13 @@ void Logger::log(ILogMessage *message) {
             dist->persistLog(message);
         }
     });
+    delete message; //TODO: prepare destructor
 }
 
 void Logger::addDistributor(ILogDistributor *distributor) {
     this->distributors.push_back(distributor);
+}
+
+ILogMessage *Logger::prepareMessage(string message, LogType type) {
+    return new RawLogMessage(std::move(message), type);
 }

@@ -9,6 +9,8 @@
 /Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/Logger.cpp
 Logger.h
 /Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/Logger.h
+utility
+-
 
 /Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/Logger.h
 iostream
@@ -32,12 +34,6 @@ distribution/ConsoleLogDistributor.h
 Logger.h
 /Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/Logger.h
 
-/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/distribution/ConsoleLogDistributor.cpp
-ConsoleLogDistributor.h
-/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/distribution/ConsoleLogDistributor.h
-iostream
--
-
 /Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/distribution/ConsoleLogDistributor.h
 ILogDistributor.h
 /Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/distribution/ILogDistributor.h
@@ -48,12 +44,6 @@ ILogDistributor.h
 
 /Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/message/ILogMessage.h
 iostream
--
-
-/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/message/RawLogMessage.cpp
-RawLogMessage.h
-/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/message/RawLogMessage.h
-utility
 -
 
 /Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/message/RawLogMessage.h

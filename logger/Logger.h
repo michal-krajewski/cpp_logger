@@ -20,10 +20,14 @@ public:
     Logger();
     void addDistributor(ILogDistributor *distributor);
     void info(string message);
+    void debug(string message);
+    void error(string message);
+    void warn(string message);
 
 private:
     void log(ILogMessage *message);
     vector<ILogDistributor*> distributors;
+    ILogMessage* prepareMessage(string message, LogType type);
 };
 
 
