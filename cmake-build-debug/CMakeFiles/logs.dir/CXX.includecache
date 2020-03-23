@@ -6,12 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/Logger.cpp
-Logger.h
-/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/Logger.h
-utility
--
-
 /Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/Logger.h
 iostream
 -
@@ -37,6 +31,8 @@ Logger.h
 /Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/distribution/ConsoleLogDistributor.h
 ILogDistributor.h
 /Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/distribution/ILogDistributor.h
+vector
+-
 
 /Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/distribution/ILogDistributor.h
 ../message/ILogMessage.h
@@ -53,8 +49,14 @@ iostream
 /Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/message/iostream
 
 /Users/atreses/Documents/Uczelnia/pw/Cpp/logs/main.cpp
-iostream
--
 logger/LoggerFactory.h
 /Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/LoggerFactory.h
+logger/distribution/ConsoleLogDistributor.h
+/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/distribution/ConsoleLogDistributor.h
+logger/message/ILogMessage.h
+/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/message/ILogMessage.h
+iostream
+-
+vector
+-
 

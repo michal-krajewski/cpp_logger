@@ -6,14 +6,15 @@
 #define LOGS_CONSOLELOGDISTRIBUTOR_H
 
 #include "ILogDistributor.h"
+#include <vector>
 
 class ConsoleLogDistributor : public ILogDistributor {
 public:
     bool supports(LogType logType) override;
     void persistLog(ILogMessage *message) override;
-//    ConsoleLogDistributor(LogType *supportedTypes);
-//private:
-//    LogType *supportedTypes;
+    ConsoleLogDistributor(vector<LogType> *supportedTypes);
+private:
+    vector<LogType> *supportedTypes;
 };
 
 

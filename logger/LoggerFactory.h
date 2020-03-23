@@ -10,6 +10,7 @@
 class LoggerFactory {
 public:
     static Logger getLogger();
+
 };
 
 

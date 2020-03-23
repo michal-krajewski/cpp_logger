@@ -27,6 +27,7 @@ CMakeFiles/logs.dir/logger/message/RawLogMessage.cpp.o
 CMakeFiles/logs.dir/main.cpp.o
  /Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/Logger.h
  /Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/LoggerFactory.h
+ /Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/distribution/ConsoleLogDistributor.h
  /Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/distribution/ILogDistributor.h
  /Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/message/ILogMessage.h
  /Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/message/RawLogMessage.h

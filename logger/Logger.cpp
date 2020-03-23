@@ -6,9 +6,7 @@
 
 #include <utility>
 
-Logger::Logger() {
-
-}
+Logger::Logger() = default;
 
 void Logger::info(string message) {
     ILogMessage *msg = this->prepareMessage(std::move(message), INFO);

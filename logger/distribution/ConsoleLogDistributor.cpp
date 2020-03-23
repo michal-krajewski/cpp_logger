@@ -9,13 +9,18 @@
 using namespace std;
 
 bool ConsoleLogDistributor::supports(LogType logType) {
-    return true; //TODO: fix to check
+    for (auto it = supportedTypes->begin(); it != supportedTypes->end(); it++) {
+        if (*it.base() == logType) {
+            return true;
+        }
+    }
 }
 
 void ConsoleLogDistributor::persistLog(ILogMessage *message) {
     cout << message->getMessage() << endl;
 }
 
-//ConsoleLogDistributor::ConsoleLogDistributor(LogType *supportedTypes) {
-//    this->supportedTypes = supportedTypes;
-//}
+ConsoleLogDistributor::ConsoleLogDistributor(vector<LogType> *supportedTypes) {
+    this->supportedTypes = supportedTypes;
+}
+
