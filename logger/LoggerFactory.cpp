@@ -5,6 +5,7 @@
 #include "LoggerFactory.h"
 #include "distribution/ConsoleLogDistributor.h"
 #include "distribution/FileLogDistributor.h"
+#include "distribution/HttpLogDistributor.h"
 
 Logger LoggerFactory::getLogger() {
     auto *supportedTypes = new vector<LogType>;
@@ -22,6 +23,18 @@ Logger LoggerFactory::getLogger() {
             new FileLogDistributor(
                     supportedFileLogDistributorTypes,
                     "/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/resources/log.txt"
+            )
+    );
+
+    auto *supportedHttpLogDistributorTypes = new vector<LogType>;
+    supportedFileLogDistributorTypes->push_back(INFO);
+    supportedFileLogDistributorTypes->push_back(ERROR);
+
+
+    logger.addDistributor(
+            new HttpLogDistributor(
+                    supportedFileLogDistributorTypes,
+                    "http://localhost:3000/test"
             )
     );
 
