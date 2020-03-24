@@ -1,7 +1,5 @@
 #include "logger/LoggerFactory.h"
 
-using namespace std;
-
 int main() {
 
     Logger logger = LoggerFactory::getLogger();

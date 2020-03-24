@@ -5,6 +5,7 @@
 #include "Logger.h"
 
 #include <utility>
+#include "message/DateTimeLogMessage.h"
 
 Logger::Logger() = default;
 
@@ -42,5 +43,5 @@ void Logger::addDistributor(ILogDistributor *distributor) {
 }
 
 ILogMessage *Logger::prepareMessage(string message, LogType type) {
-    return new RawLogMessage(std::move(message), type);
+    return new DateTimeLogMessage(std::move(message), type);
 }

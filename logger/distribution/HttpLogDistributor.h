@@ -13,12 +13,11 @@ class HttpLogDistributor : public ILogDistributor {
 public:
     bool supports(LogType logType) override;
     void persistLog(ILogMessage *message) override;
-    HttpLogDistributor(vector<LogType> *supportedTypes, string url);
+    HttpLogDistributor(vector<LogType> *supportedTypes, const string& url);
 private:
     vector<LogType> *supportedTypes;
     CURL *curl;
     string prepareJsonMessage(ILogMessage *message);
-    char* asCharArray(string value);
 };
 
 

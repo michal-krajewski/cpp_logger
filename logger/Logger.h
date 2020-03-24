@@ -9,7 +9,6 @@
 #include <vector>
 
 #include "message/ILogMessage.h"
-#include "message/RawLogMessage.h"
 #include "distribution/ILogDistributor.h"
 
 using namespace std;

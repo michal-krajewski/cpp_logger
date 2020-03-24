@@ -3,6 +3,7 @@
 //
 
 #include "HttpLogDistributor.h"
+#include "../util/StringConverter.h"
 
 bool HttpLogDistributor::supports(LogType logType) {
     for (auto it = supportedTypes->begin(); it != supportedTypes->end(); it++) {
@@ -13,16 +14,16 @@ bool HttpLogDistributor::supports(LogType logType) {
 }
 
 void HttpLogDistributor::persistLog(ILogMessage *message) {
-    char* simpleMessage = asCharArray(prepareJsonMessage(message));
+    char* simpleMessage = StringConverter::convertToCharArray(prepareJsonMessage(message));
     curl_easy_setopt(curl, CURLOPT_POSTFIELDS, simpleMessage);
     curl_easy_perform(curl);
 
     delete[] simpleMessage;
 }
 
-HttpLogDistributor::HttpLogDistributor(vector<LogType> *supportedTypes, string url) {
+HttpLogDistributor::HttpLogDistributor(vector<LogType> *supportedTypes, const string& url) {
     this->curl = curl_easy_init();
-    char* simpleUrl = asCharArray(std::move(url));
+    char* simpleUrl = StringConverter::convertToCharArray(url);
     curl_easy_setopt(curl, CURLOPT_URL, simpleUrl);
 
     this->supportedTypes = supportedTypes;
@@ -32,10 +33,4 @@ HttpLogDistributor::HttpLogDistributor(vector<LogType> *supportedTypes, string u
 
 string HttpLogDistributor::prepareJsonMessage(ILogMessage *message) {
     return R"({"message": ")" + message->getMessage() + "\"}";
-}
-
-char *HttpLogDistributor::asCharArray(string value) {
-    char *charArray = new char[value.size() + 1]();
-    strcpy(charArray, value.c_str());
-    return charArray;
 }
