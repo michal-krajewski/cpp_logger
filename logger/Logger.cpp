@@ -7,7 +7,15 @@
 #include <utility>
 #include "message/DateTimeLogMessage.h"
 
-Logger::Logger() = default;
+Logger *Logger::getInstatnce() {
+    static Logger logger;
+
+    return &logger;
+}
+
+Logger::Logger() {
+    this->configured = false;
+}
 
 void Logger::info(string message) {
     ILogMessage *msg = this->prepareMessage(std::move(message), INFO);
@@ -40,8 +48,13 @@ void Logger::log(ILogMessage *message) {
 
 void Logger::addDistributor(ILogDistributor *distributor) {
     this->distributors.push_back(distributor);
+    this->configured = true;
 }
 
 ILogMessage *Logger::prepareMessage(string message, LogType type) {
     return new DateTimeLogMessage(std::move(message), type);
+}
+
+bool Logger::isConfigured() {
+    return this->configured;
 }

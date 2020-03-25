@@ -7,36 +7,49 @@
 #include "distribution/FileLogDistributor.h"
 #include "distribution/HttpLogDistributor.h"
 
-Logger LoggerFactory::getLogger() {
-    auto *supportedTypes = new vector<LogType>;
-    supportedTypes->push_back(INFO);
-    supportedTypes->push_back(WARN);
+Logger* LoggerFactory::getLogger() {
+    static Logger *logger = Logger::getInstatnce();
 
-    Logger logger;
-    logger.addDistributor(new ConsoleLogDistributor(supportedTypes));
+    if (!logger->isConfigured()) {
+        configureConsoleLogDistributor(logger);
+        configureFileLogDistributor(logger);
+        configureHttpLogDistributor(logger);
+    }
 
-    auto *supportedFileLogDistributorTypes = new vector<LogType>;
-    supportedFileLogDistributorTypes->push_back(INFO);
-    supportedFileLogDistributorTypes->push_back(DEBUG);
+    return logger;
+}
 
-    logger.addDistributor(
+void LoggerFactory::configureConsoleLogDistributor(Logger *logger) {
+    auto *supportedTypes = new List<LogType>;
+    supportedTypes->add(INFO);
+    supportedTypes->add(WARN);
+
+    logger->addDistributor(new ConsoleLogDistributor(supportedTypes));
+}
+
+void LoggerFactory::configureFileLogDistributor(Logger *logger) {
+    auto *supportedTypes = new List<LogType>;
+    supportedTypes->add(INFO);
+    supportedTypes->add(DEBUG);
+
+    logger->addDistributor(
             new FileLogDistributor(
-                    supportedFileLogDistributorTypes,
+                    supportedTypes,
                     "/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/resources/log.txt"
             )
     );
+}
 
-    auto *supportedHttpLogDistributorTypes = new vector<LogType>;
-    supportedFileLogDistributorTypes->push_back(INFO);
-    supportedFileLogDistributorTypes->push_back(ERROR);
+void LoggerFactory::configureHttpLogDistributor(Logger *logger) {
+    auto *supportedTypes = new List<LogType>;
+    supportedTypes->add(WARN);
+    supportedTypes->add(DEBUG);
+    supportedTypes->add(ERROR);
 
-
-    logger.addDistributor(
+    logger->addDistributor(
             new HttpLogDistributor(
-                    supportedFileLogDistributorTypes,
+                    supportedTypes,
                     "http://localhost:3000/test"
             )
     );
-
-    return logger;
 }

@@ -16,14 +16,16 @@ using namespace std;
 
 class Logger {
 public:
-    Logger();
+    static Logger *getInstatnce();
     void addDistributor(ILogDistributor *distributor);
     void info(string message);
     void debug(string message);
     void error(string message);
     void warn(string message);
-
+    bool isConfigured();
 private:
+    Logger();
+    bool configured;
     void log(ILogMessage *message);
     vector<ILogDistributor*> distributors;
     ILogMessage* prepareMessage(string message, LogType type);

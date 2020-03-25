@@ -6,6 +6,7 @@
 #define LOGS_ILOGDISTRIBUTOR_H
 
 #include "../message/ILogMessage.h"
+#include "../util/List.h"
 
 class ILogDistributor {
 public:

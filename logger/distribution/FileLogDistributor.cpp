@@ -9,11 +9,7 @@
 using namespace std;
 
 bool FileLogDistributor::supports(LogType logType) {
-    for (auto it = supportedTypes->begin(); it != supportedTypes->end(); it++) {
-        if (*it.base() == logType) {
-            return true;
-        }
-    }
+    return supportedTypes->contains(logType);
 }
 
 void FileLogDistributor::persistLog(ILogMessage *message) {
@@ -23,7 +19,7 @@ void FileLogDistributor::persistLog(ILogMessage *message) {
     logFile << message->getMessage() << endl;
 }
 
-FileLogDistributor::FileLogDistributor(vector<LogType> *supportedTypes, string logFilePath) {
+FileLogDistributor::FileLogDistributor(List<LogType> *supportedTypes, string logFilePath) {
     this->supportedTypes = supportedTypes;
     this->logFilePath = std::move(logFilePath);
 }

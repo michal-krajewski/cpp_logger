@@ -9,8 +9,12 @@
 
 class LoggerFactory {
 public:
-    static Logger getLogger();
+    static Logger* getLogger();
 
+private:
+    static void configureConsoleLogDistributor(Logger *logger);
+    static void configureFileLogDistributor(Logger *logger);
+    static void configureHttpLogDistributor(Logger *logger);
 };
 
 

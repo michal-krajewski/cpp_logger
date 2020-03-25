@@ -6,11 +6,7 @@
 #include "../util/StringConverter.h"
 
 bool HttpLogDistributor::supports(LogType logType) {
-    for (auto it = supportedTypes->begin(); it != supportedTypes->end(); it++) {
-        if (*it.base() == logType) {
-            return true;
-        }
-    }
+    return supportedTypes->contains(logType);
 }
 
 void HttpLogDistributor::persistLog(ILogMessage *message) {
@@ -21,7 +17,7 @@ void HttpLogDistributor::persistLog(ILogMessage *message) {
     delete[] simpleMessage;
 }
 
-HttpLogDistributor::HttpLogDistributor(vector<LogType> *supportedTypes, const string& url) {
+HttpLogDistributor::HttpLogDistributor(List<LogType> *supportedTypes, const string& url) {
     this->curl = curl_easy_init();
     char* simpleUrl = StringConverter::convertToCharArray(url);
     curl_easy_setopt(curl, CURLOPT_URL, simpleUrl);

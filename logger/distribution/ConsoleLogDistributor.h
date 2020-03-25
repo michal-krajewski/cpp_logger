@@ -12,9 +12,9 @@ class ConsoleLogDistributor : public ILogDistributor {
 public:
     bool supports(LogType logType) override;
     void persistLog(ILogMessage *message) override;
-    ConsoleLogDistributor(vector<LogType> *supportedTypes);
+    ConsoleLogDistributor(List<LogType> *supportedTypes);
 private:
-    vector<LogType> *supportedTypes;
+    List<LogType> *supportedTypes;
 };
 
 

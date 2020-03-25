@@ -13,9 +13,9 @@ class FileLogDistributor : public ILogDistributor {
 public:
     bool supports(LogType logType) override;
     void persistLog(ILogMessage *message) override;
-    FileLogDistributor(vector<LogType> *supportedTypes, string logFilePath);
+    FileLogDistributor(List<LogType> *supportedTypes, string logFilePath);
 private:
-    vector<LogType> *supportedTypes;
+    List<LogType> *supportedTypes;
     string logFilePath;
 };
 
