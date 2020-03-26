@@ -20,36 +20,37 @@ Logger* LoggerFactory::getLogger() {
 }
 
 void LoggerFactory::configureConsoleLogDistributor(Logger *logger) {
-    auto *supportedTypes = new List<LogType>;
-    supportedTypes->add(INFO);
-    supportedTypes->add(WARN);
-
-    logger->addDistributor(new ConsoleLogDistributor(supportedTypes));
+    auto distributorConfig = config().getPropertyFor(CONSOLE_LOGGER);
+    if (distributorConfig->isEnabled()) {
+        logger->addDistributor(new ConsoleLogDistributor(distributorConfig->getSupportedTypes()));
+    }
 }
 
 void LoggerFactory::configureFileLogDistributor(Logger *logger) {
-    auto *supportedTypes = new List<LogType>;
-    supportedTypes->add(INFO);
-    supportedTypes->add(DEBUG);
-
-    logger->addDistributor(
-            new FileLogDistributor(
-                    supportedTypes,
-                    "/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/resources/log.txt"
-            )
-    );
+    auto distributorConfig = config().getPropertyFor(FILE_LOGGER);
+    if (distributorConfig->isEnabled()) {
+        logger->addDistributor(
+                new FileLogDistributor(
+                        distributorConfig->getSupportedTypes(),
+                        distributorConfig->getProperty(FILE_PATH)
+                )
+        );
+    }
 }
 
 void LoggerFactory::configureHttpLogDistributor(Logger *logger) {
-    auto *supportedTypes = new List<LogType>;
-    supportedTypes->add(WARN);
-    supportedTypes->add(DEBUG);
-    supportedTypes->add(ERROR);
+    auto distributorConfig = config().getPropertyFor(HTTP_LOGGER);
+    if (distributorConfig->isEnabled()) {
+        logger->addDistributor(
+                new HttpLogDistributor(
+                        distributorConfig->getSupportedTypes(),
+                        distributorConfig->getProperty(URL)
+                )
+        );
+    }
+}
 
-    logger->addDistributor(
-            new HttpLogDistributor(
-                    supportedTypes,
-                    "http://localhost:3000/test"
-            )
-    );
+Config LoggerFactory::config() {
+    static Config loggerConfiguration = Config();
+    return loggerConfiguration;
 }
