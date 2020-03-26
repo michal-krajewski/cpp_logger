@@ -16,7 +16,7 @@ using namespace std;
 
 class Logger {
 public:
-    static Logger *getInstatnce();
+    static Logger *getInstance();
     void addDistributor(ILogDistributor *distributor);
     void info(string message);
     void debug(string message);

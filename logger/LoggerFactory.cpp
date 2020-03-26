@@ -8,7 +8,7 @@
 #include "distribution/HttpLogDistributor.h"
 
 Logger* LoggerFactory::getLogger() {
-    static Logger *logger = Logger::getInstatnce();
+    static Logger *logger = Logger::getInstance();
 
     if (!logger->isConfigured()) {
         configureConsoleLogDistributor(logger);

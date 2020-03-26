@@ -7,7 +7,7 @@
 #include <utility>
 #include "message/DateTimeLogMessage.h"
 
-Logger *Logger::getInstatnce() {
+Logger *Logger::getInstance() {
     static Logger logger;
 
     return &logger;
