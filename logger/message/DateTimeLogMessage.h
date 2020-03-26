@@ -15,6 +15,7 @@ public:
     string getMessage() override;
     LogType getType() override;
     DateTimeLogMessage(string message, LogType messageType);
+    ~DateTimeLogMessage() override;
 
 private:
     string message;

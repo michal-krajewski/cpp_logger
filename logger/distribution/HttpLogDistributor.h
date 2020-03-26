@@ -14,6 +14,7 @@ public:
     bool supports(LogType logType) override;
     void persistLog(ILogMessage *message) override;
     HttpLogDistributor(List<LogType> *supportedTypes, const string& url);
+    ~HttpLogDistributor();
 private:
     List<LogType> *supportedTypes;
     CURL *curl;

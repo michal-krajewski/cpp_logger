@@ -23,3 +23,7 @@ DateTimeLogMessage::DateTimeLogMessage(string message, LogType messageType) {
     this->loggedDate = DateTime::now();
     this->messageType = messageType;
 }
+
+DateTimeLogMessage::~DateTimeLogMessage() {
+    cout << "deleting DateTimeLogMessage" << endl;
+}

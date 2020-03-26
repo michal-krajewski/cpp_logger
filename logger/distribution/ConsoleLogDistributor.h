@@ -13,6 +13,7 @@ public:
     bool supports(LogType logType) override;
     void persistLog(ILogMessage *message) override;
     ConsoleLogDistributor(List<LogType> *supportedTypes);
+    ~ConsoleLogDistributor();
 private:
     List<LogType> *supportedTypes;
 };

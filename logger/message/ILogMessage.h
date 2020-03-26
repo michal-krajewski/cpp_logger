@@ -16,6 +16,7 @@ class ILogMessage {
 public:
     virtual string getMessage() = 0;
     virtual LogType getType() = 0;
+    virtual ~ILogMessage() = default;
 
 protected:
     static string getTextForEnum(int enumValue) {

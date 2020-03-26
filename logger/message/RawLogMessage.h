@@ -16,6 +16,7 @@ public:
     string getMessage() override;
     LogType getType() override;
     RawLogMessage(string message, LogType messageType);
+    ~RawLogMessage() override;
 
 private:
     string message;

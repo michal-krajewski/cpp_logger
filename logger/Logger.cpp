@@ -6,11 +6,12 @@
 
 #include <utility>
 #include "message/DateTimeLogMessage.h"
+#include "LoggerConfigurer.h"
 
-Logger *Logger::getInstance() {
+Logger& Logger::getInstance() {
     static Logger logger;
 
-    return &logger;
+    return logger;
 }
 
 Logger::Logger() {
@@ -43,7 +44,7 @@ void Logger::log(ILogMessage *message) {
             dist->persistLog(message);
         }
     });
-    delete message; //TODO: prepare destructor
+    delete message;
 }
 
 void Logger::addDistributor(ILogDistributor *distributor) {
@@ -56,5 +57,7 @@ ILogMessage *Logger::prepareMessage(string message, LogType type) {
 }
 
 bool Logger::isConfigured() {
-    return this->configured;
+    return configured;
 }
+
+Logger::~Logger() = default;

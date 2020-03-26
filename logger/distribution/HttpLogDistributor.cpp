@@ -30,3 +30,9 @@ HttpLogDistributor::HttpLogDistributor(List<LogType> *supportedTypes, const stri
 string HttpLogDistributor::prepareJsonMessage(ILogMessage *message) {
     return R"({"message": ")" + message->getMessage() + "\"}";
 }
+
+HttpLogDistributor::~HttpLogDistributor() {
+    cout << "deleting HttpLogDistributor" << endl;
+    delete this->supportedTypes;
+    delete this->curl;
+}

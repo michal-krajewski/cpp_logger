@@ -19,3 +19,7 @@ string RawLogMessage::getMessage() {
 LogType RawLogMessage::getType() {
     return this->messageType;
 }
+
+RawLogMessage::~RawLogMessage() {
+    cout << "deleting RawLogMessage" << endl;
+}

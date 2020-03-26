@@ -26,7 +26,8 @@ List<LogType> *Property::getSupportedTypes() {
 }
 
 Property::~Property() {
-    delete[] this->supportedTypes;
+    cout << "deleting property " << this->getName() << endl;
+    delete this->supportedTypes;
 }
 
 void Property::addSupport(LogType supportedType) {

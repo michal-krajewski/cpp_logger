@@ -8,6 +8,7 @@
 #include "Config.h"
 
 Config::Config() {
+    cout << "creating new config" << endl;
     this->properties = new List<Property*>();
     properties->add(new Property(getName(CONSOLE_LOGGER)));
     properties->add(new Property(getName(HTTP_LOGGER)));
@@ -34,6 +35,18 @@ Property* Config::getPropertyFor(LoggerType loggerType) {
         }
     }
     return nullptr;
+}
+
+Config::~Config() {
+    cout << "deleting config (general message)" << endl;
+    for (int i = 0; i < this->properties->size(); ++i) {
+        cout << "deleting property " << endl;
+        delete this->properties->get(i);
+    }
+    if (this->properties) {
+        cout << "deleting properties as list " << endl;
+        delete this->properties;
+    }
 }
 
 //string Config::defaultPropertyFilePath() {

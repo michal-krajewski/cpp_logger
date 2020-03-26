@@ -12,6 +12,7 @@ class ILogDistributor {
 public:
     virtual bool supports(LogType logType) = 0;
     virtual void persistLog(ILogMessage *message) = 0;
+    virtual ~ILogDistributor() = default;
 };
 
 

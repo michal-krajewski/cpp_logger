@@ -16,6 +16,7 @@ class Config {
 public:
     Config();
     Property *getPropertyFor(LoggerType loggerType);
+    ~Config();
 private:
     List<Property*> *properties;
     static string getName(LoggerType loggerType);

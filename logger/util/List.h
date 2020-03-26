@@ -14,6 +14,7 @@ template <class T>
 class List {
 public:
     List<T>();
+    ~List<T>();
     T get(int index);
     void add(T element);
     bool contains(T element);
@@ -60,6 +61,11 @@ List<T> *List<T>::of(T elements[]) {
 template<class T>
 int List<T>::size() {
     return this->elements.size();
+}
+
+template<class T>
+List<T>::~List<T>() {
+    cout << "deleting some list..." << endl;
 }
 
 #endif //LOGS_LIST_H

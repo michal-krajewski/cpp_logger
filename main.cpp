@@ -1,25 +1,27 @@
-#include "logger/LoggerFactory.h"
+#include "logger/LoggerConfigurer.h"
 
 int main() {
 
-    auto config = LoggerFactory::config();
-    auto console = config.getPropertyFor(CONSOLE_LOGGER);
+    auto config = LoggerConfigurer::config();
+    auto console = config->getPropertyFor(CONSOLE_LOGGER);
     console->enable();
-    console->addSupport(INFO);
+    console->addSupport(ERROR);
 
-    auto http = config.getPropertyFor(HTTP_LOGGER);
+    auto http = config->getPropertyFor(HTTP_LOGGER);
     http->enable();
-    http->addSupport(DEBUG);
+    http->addSupport(ERROR);
     http->addSupport(INFO);
     http->setProperty(URL, "http://localhost:3000/test");
+    LoggerConfigurer::configureLogger();
 
-    Logger *logger = LoggerFactory::getLogger();
+    Logger::getInstance().info("test");
 
-    logger->info("test info message");
-    logger->debug("debug message");
-    logger->warn("warn message");
-    logger->error("error message");
-
+    cout << "That's all folks!" << endl;
 
     return 0;
 }
+
+
+//TODO: Documentation
+//TODO: All strings as pointers
+//TODO: [Optional] LoggerWithClass facade

@@ -23,3 +23,8 @@ FileLogDistributor::FileLogDistributor(List<LogType> *supportedTypes, string log
     this->supportedTypes = supportedTypes;
     this->logFilePath = std::move(logFilePath);
 }
+
+FileLogDistributor::~FileLogDistributor() {
+    cout << "deleting FileLogDistributor" << endl;
+    delete this->supportedTypes;
+}

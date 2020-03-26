@@ -16,7 +16,7 @@ using namespace std;
 
 class Logger {
 public:
-    static Logger *getInstance();
+    static Logger &getInstance();
     void addDistributor(ILogDistributor *distributor);
     void info(string message);
     void debug(string message);
@@ -25,6 +25,9 @@ public:
     bool isConfigured();
 private:
     Logger();
+    ~Logger();
+    Logger& operator=(const Logger&);
+    Logger(const Logger&);
     bool configured;
     void log(ILogMessage *message);
     vector<ILogDistributor*> distributors;

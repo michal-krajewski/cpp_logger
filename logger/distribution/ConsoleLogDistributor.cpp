@@ -20,3 +20,8 @@ ConsoleLogDistributor::ConsoleLogDistributor(List<LogType> *supportedTypes) {
     this->supportedTypes = supportedTypes;
 }
 
+ConsoleLogDistributor::~ConsoleLogDistributor() {
+    cout << "deleting ConsoleLogDistributor" << endl;
+    delete this->supportedTypes;
+}
+

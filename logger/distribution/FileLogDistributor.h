@@ -14,6 +14,7 @@ public:
     bool supports(LogType logType) override;
     void persistLog(ILogMessage *message) override;
     FileLogDistributor(List<LogType> *supportedTypes, string logFilePath);
+    ~FileLogDistributor();
 private:
     List<LogType> *supportedTypes;
     string logFilePath;
