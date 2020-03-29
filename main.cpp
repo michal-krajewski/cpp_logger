@@ -15,6 +15,7 @@ int main() {
     LoggerConfigurer::configureLogger();
 
     Logger::getInstance().info("test");
+    Logger::getInstance().error("test");
 
     cout << "That's all folks!" << endl;
 

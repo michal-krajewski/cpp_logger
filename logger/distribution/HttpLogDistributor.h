@@ -11,7 +11,14 @@
 
 class HttpLogDistributor : public ILogDistributor {
 public:
+
+    /// Returns information if provided message log type is supported by the Logger
+    /// @param [in] message logType
+    /// @return bool
     bool supports(LogType logType) override;
+
+    /// Sends provided message via POST method to the configured address
+    /// @param pointer to message (ILogMessage implementation)
     void persistLog(ILogMessage *message) override;
     HttpLogDistributor(List<LogType> *supportedTypes, const string& url);
     ~HttpLogDistributor();

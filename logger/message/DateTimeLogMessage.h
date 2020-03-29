@@ -12,7 +12,12 @@ using namespace std;
 
 class DateTimeLogMessage : public ILogMessage {
 public:
+    /// Returns formatted message prefixed with creation date as std::string
+    /// @return std::string
     string getMessage() override;
+
+    /// Returns type of the message
+    /// @return LogType
     LogType getType() override;
     DateTimeLogMessage(string message, LogType messageType);
     ~DateTimeLogMessage() override;

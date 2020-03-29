@@ -16,12 +16,32 @@ using namespace std;
 
 class Logger {
 public:
+    /// Returns instance of Logger
+    /// @return Logger
     static Logger &getInstance();
+
+    /// Adds additional LogDistributor to Logger, changes logger status to configured
+    /// @param pointer to ILogDistributor
     void addDistributor(ILogDistributor *distributor);
+
+    /// Logs provided message as INFO in all available distributors for INFO type
+    /// @param message to log
     void info(string message);
+
+    /// Logs provided message as DEBUG in all available distributors for DEBUG type
+    /// @param message to log
     void debug(string message);
+
+    /// Logs provided message as ERROR in all available distributors for ERROR type
+    /// @param message to log
     void error(string message);
+
+    /// Logs provided message as WARN in all available distributors for WARN type
+    /// @param message to log
     void warn(string message);
+
+    /// Returns information if logger was configured - has at least one distributor added
+    /// @return bool
     bool isConfigured();
 private:
     Logger();

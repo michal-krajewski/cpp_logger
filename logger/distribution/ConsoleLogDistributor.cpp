@@ -21,7 +21,6 @@ ConsoleLogDistributor::ConsoleLogDistributor(List<LogType> *supportedTypes) {
 }
 
 ConsoleLogDistributor::~ConsoleLogDistributor() {
-    cout << "deleting ConsoleLogDistributor" << endl;
     delete this->supportedTypes;
 }
 

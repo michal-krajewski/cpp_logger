@@ -25,5 +25,4 @@ DateTimeLogMessage::DateTimeLogMessage(string message, LogType messageType) {
 }
 
 DateTimeLogMessage::~DateTimeLogMessage() {
-    cout << "deleting DateTimeLogMessage" << endl;
 }

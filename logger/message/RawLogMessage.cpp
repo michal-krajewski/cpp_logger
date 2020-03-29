@@ -21,5 +21,4 @@ LogType RawLogMessage::getType() {
 }
 
 RawLogMessage::~RawLogMessage() {
-    cout << "deleting RawLogMessage" << endl;
 }

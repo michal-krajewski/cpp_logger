@@ -13,7 +13,12 @@ using namespace std;
 
 class RawLogMessage : public ILogMessage {
 public:
+    /// Returns formatted message as std::string
+    /// @return std::string
     string getMessage() override;
+
+    /// Returns type of the message
+    /// @return LogType
     LogType getType() override;
     RawLogMessage(string message, LogType messageType);
     ~RawLogMessage() override;

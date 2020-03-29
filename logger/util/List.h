@@ -65,7 +65,6 @@ int List<T>::size() {
 
 template<class T>
 List<T>::~List<T>() {
-    cout << "deleting some list..." << endl;
 }
 
 #endif //LOGS_LIST_H

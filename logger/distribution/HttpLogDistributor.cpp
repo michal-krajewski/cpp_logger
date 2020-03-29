@@ -32,7 +32,6 @@ string HttpLogDistributor::prepareJsonMessage(ILogMessage *message) {
 }
 
 HttpLogDistributor::~HttpLogDistributor() {
-    cout << "deleting HttpLogDistributor" << endl;
     delete this->supportedTypes;
     delete this->curl;
 }

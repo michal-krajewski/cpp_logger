@@ -25,6 +25,5 @@ FileLogDistributor::FileLogDistributor(List<LogType> *supportedTypes, string log
 }
 
 FileLogDistributor::~FileLogDistributor() {
-    cout << "deleting FileLogDistributor" << endl;
     delete this->supportedTypes;
 }

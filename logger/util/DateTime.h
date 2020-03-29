@@ -11,8 +11,17 @@ using namespace std;
 
 class DateTime {
 public:
+    /// Returns current date in default format as std::string
+    /// @return date as std::string
     static string now();
+
+    /// Returns current date in specified format as std::string
+    /// @param formatter (std::string)
+    /// @return date as std::string
     static string now(const string& formatter);
+
+    /// Returns default formatter as std::string
+    /// @return default formatter (std::string)
     static string defaultFormatter();
 };
 

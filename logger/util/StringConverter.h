@@ -11,6 +11,9 @@ using namespace std;
 
 class StringConverter {
 public:
+    /// Converts provided std::string to char array
+    /// @param std::string value
+    /// @return char* (char array)
     static char* convertToCharArray(const string& value);
 };
 

@@ -14,7 +14,12 @@ static char *enumStrings[] = {"INFO", "ERROR", "WARN", "DEBUG"};
 
 class ILogMessage {
 public:
+    /// Returns formatted message as std::string
+    /// @return std::string
     virtual string getMessage() = 0;
+
+    /// Returns type of the message
+    /// @return LogType
     virtual LogType getType() = 0;
     virtual ~ILogMessage() = default;
 

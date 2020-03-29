@@ -7,19 +7,7 @@
 #include "distribution/FileLogDistributor.h"
 #include "distribution/HttpLogDistributor.h"
 
-//Logger& LoggerFactory::getLogger() {
-//
-//    if (!Logger::getInstance().isConfigured()) {
-//        configureConsoleLogDistributor();
-//        configureFileLogDistributor();
-//        configureHttpLogDistributor();
-//    }
-//
-//    return Logger::getInstance();
-//}
-
 void LoggerConfigurer::configureLogger() {
-    cout << "Configuring logger..." << endl;
     configureConsoleLogDistributor();
     configureFileLogDistributor();
     configureHttpLogDistributor();

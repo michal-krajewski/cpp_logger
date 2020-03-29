@@ -15,7 +15,12 @@ enum LoggerType {CONSOLE_LOGGER, HTTP_LOGGER, FILE_LOGGER};
 class Config {
 public:
     Config();
+
+    /// Returns available in the system properties for given logger type
+    /// @param [in] loggerType for which configured properties are being requested
+    /// @return pointer to Property for requested logger type
     Property *getPropertyFor(LoggerType loggerType);
+
     ~Config();
 private:
     List<Property*> *properties;

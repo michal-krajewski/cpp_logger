@@ -11,7 +11,6 @@
 
 class LoggerConfigurer {
 public:
-//    static Logger& getLogger();
     static Config* config();
     static void configureLogger();
 private:
