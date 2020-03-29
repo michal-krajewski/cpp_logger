@@ -1,6 +1,6 @@
 #include "logger/LoggerConfigurer.h"
 
-int main() {
+int run() {
 
     auto config = LoggerConfigurer::config();
     auto console = config->getPropertyFor(CONSOLE_LOGGER);
@@ -17,12 +17,6 @@ int main() {
     Logger::getInstance().info("test");
     Logger::getInstance().error("test");
 
-    cout << "That's all folks!" << endl;
-
     return 0;
 }
 
-
-//TODO: Documentation
-//TODO: All strings as pointers
-//TODO: [Optional] LoggerWithClass facade

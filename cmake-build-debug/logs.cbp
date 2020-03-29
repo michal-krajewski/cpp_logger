@@ -80,16 +80,52 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/bookStorageExample/BookConfig.cpp">
+			<Option target="logs"/>
+		</Unit>
+		<Unit filename="/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/bookStorageExample/BookConfig.h">
+			<Option target="logs"/>
+		</Unit>
+		<Unit filename="/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/bookStorageExample/BookMain.cpp">
+			<Option target="logs"/>
+		</Unit>
+		<Unit filename="/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/bookStorageExample/book/Book.cpp">
+			<Option target="logs"/>
+		</Unit>
+		<Unit filename="/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/bookStorageExample/book/Book.h">
+			<Option target="logs"/>
+		</Unit>
+		<Unit filename="/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/bookStorageExample/book/BookService.cpp">
+			<Option target="logs"/>
+		</Unit>
+		<Unit filename="/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/bookStorageExample/book/BookService.h">
+			<Option target="logs"/>
+		</Unit>
+		<Unit filename="/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/bookStorageExample/book/Storage.h">
+			<Option target="logs"/>
+		</Unit>
 		<Unit filename="/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/Logger.cpp">
 			<Option target="logs"/>
 		</Unit>
 		<Unit filename="/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/Logger.h">
 			<Option target="logs"/>
 		</Unit>
-		<Unit filename="/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/LoggerFactory.cpp">
+		<Unit filename="/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/LoggerConfigurer.cpp">
 			<Option target="logs"/>
 		</Unit>
-		<Unit filename="/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/LoggerFactory.h">
+		<Unit filename="/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/LoggerConfigurer.h">
+			<Option target="logs"/>
+		</Unit>
+		<Unit filename="/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/config/Config.cpp">
+			<Option target="logs"/>
+		</Unit>
+		<Unit filename="/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/config/Config.h">
+			<Option target="logs"/>
+		</Unit>
+		<Unit filename="/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/config/Property.cpp">
+			<Option target="logs"/>
+		</Unit>
+		<Unit filename="/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/config/Property.h">
 			<Option target="logs"/>
 		</Unit>
 		<Unit filename="/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/distribution/ConsoleLogDistributor.cpp">
@@ -104,7 +140,19 @@
 		<Unit filename="/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/distribution/FileLogDistributor.h">
 			<Option target="logs"/>
 		</Unit>
+		<Unit filename="/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/distribution/HttpLogDistributor.cpp">
+			<Option target="logs"/>
+		</Unit>
+		<Unit filename="/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/distribution/HttpLogDistributor.h">
+			<Option target="logs"/>
+		</Unit>
 		<Unit filename="/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/distribution/ILogDistributor.h">
+			<Option target="logs"/>
+		</Unit>
+		<Unit filename="/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/message/DateTimeLogMessage.cpp">
+			<Option target="logs"/>
+		</Unit>
+		<Unit filename="/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/message/DateTimeLogMessage.h">
 			<Option target="logs"/>
 		</Unit>
 		<Unit filename="/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/message/ILogMessage.h">
@@ -114,6 +162,21 @@
 			<Option target="logs"/>
 		</Unit>
 		<Unit filename="/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/message/RawLogMessage.h">
+			<Option target="logs"/>
+		</Unit>
+		<Unit filename="/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/util/DateTime.cpp">
+			<Option target="logs"/>
+		</Unit>
+		<Unit filename="/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/util/DateTime.h">
+			<Option target="logs"/>
+		</Unit>
+		<Unit filename="/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/util/List.h">
+			<Option target="logs"/>
+		</Unit>
+		<Unit filename="/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/util/StringConverter.cpp">
+			<Option target="logs"/>
+		</Unit>
+		<Unit filename="/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/logger/util/StringConverter.h">
 			<Option target="logs"/>
 		</Unit>
 		<Unit filename="/Users/atreses/Documents/Uczelnia/pw/Cpp/logs/main.cpp">

@@ -123,6 +123,114 @@ logs/fast:
 	$(MAKE) -f CMakeFiles/logs.dir/build.make CMakeFiles/logs.dir/build
 .PHONY : logs/fast
 
+bookStorageExample/BookConfig.o: bookStorageExample/BookConfig.cpp.o
+
+.PHONY : bookStorageExample/BookConfig.o
+
+# target to build an object file
+bookStorageExample/BookConfig.cpp.o:
+	$(MAKE) -f CMakeFiles/logs.dir/build.make CMakeFiles/logs.dir/bookStorageExample/BookConfig.cpp.o
+.PHONY : bookStorageExample/BookConfig.cpp.o
+
+bookStorageExample/BookConfig.i: bookStorageExample/BookConfig.cpp.i
+
+.PHONY : bookStorageExample/BookConfig.i
+
+# target to preprocess a source file
+bookStorageExample/BookConfig.cpp.i:
+	$(MAKE) -f CMakeFiles/logs.dir/build.make CMakeFiles/logs.dir/bookStorageExample/BookConfig.cpp.i
+.PHONY : bookStorageExample/BookConfig.cpp.i
+
+bookStorageExample/BookConfig.s: bookStorageExample/BookConfig.cpp.s
+
+.PHONY : bookStorageExample/BookConfig.s
+
+# target to generate assembly for a file
+bookStorageExample/BookConfig.cpp.s:
+	$(MAKE) -f CMakeFiles/logs.dir/build.make CMakeFiles/logs.dir/bookStorageExample/BookConfig.cpp.s
+.PHONY : bookStorageExample/BookConfig.cpp.s
+
+bookStorageExample/BookMain.o: bookStorageExample/BookMain.cpp.o
+
+.PHONY : bookStorageExample/BookMain.o
+
+# target to build an object file
+bookStorageExample/BookMain.cpp.o:
+	$(MAKE) -f CMakeFiles/logs.dir/build.make CMakeFiles/logs.dir/bookStorageExample/BookMain.cpp.o
+.PHONY : bookStorageExample/BookMain.cpp.o
+
+bookStorageExample/BookMain.i: bookStorageExample/BookMain.cpp.i
+
+.PHONY : bookStorageExample/BookMain.i
+
+# target to preprocess a source file
+bookStorageExample/BookMain.cpp.i:
+	$(MAKE) -f CMakeFiles/logs.dir/build.make CMakeFiles/logs.dir/bookStorageExample/BookMain.cpp.i
+.PHONY : bookStorageExample/BookMain.cpp.i
+
+bookStorageExample/BookMain.s: bookStorageExample/BookMain.cpp.s
+
+.PHONY : bookStorageExample/BookMain.s
+
+# target to generate assembly for a file
+bookStorageExample/BookMain.cpp.s:
+	$(MAKE) -f CMakeFiles/logs.dir/build.make CMakeFiles/logs.dir/bookStorageExample/BookMain.cpp.s
+.PHONY : bookStorageExample/BookMain.cpp.s
+
+bookStorageExample/book/Book.o: bookStorageExample/book/Book.cpp.o
+
+.PHONY : bookStorageExample/book/Book.o
+
+# target to build an object file
+bookStorageExample/book/Book.cpp.o:
+	$(MAKE) -f CMakeFiles/logs.dir/build.make CMakeFiles/logs.dir/bookStorageExample/book/Book.cpp.o
+.PHONY : bookStorageExample/book/Book.cpp.o
+
+bookStorageExample/book/Book.i: bookStorageExample/book/Book.cpp.i
+
+.PHONY : bookStorageExample/book/Book.i
+
+# target to preprocess a source file
+bookStorageExample/book/Book.cpp.i:
+	$(MAKE) -f CMakeFiles/logs.dir/build.make CMakeFiles/logs.dir/bookStorageExample/book/Book.cpp.i
+.PHONY : bookStorageExample/book/Book.cpp.i
+
+bookStorageExample/book/Book.s: bookStorageExample/book/Book.cpp.s
+
+.PHONY : bookStorageExample/book/Book.s
+
+# target to generate assembly for a file
+bookStorageExample/book/Book.cpp.s:
+	$(MAKE) -f CMakeFiles/logs.dir/build.make CMakeFiles/logs.dir/bookStorageExample/book/Book.cpp.s
+.PHONY : bookStorageExample/book/Book.cpp.s
+
+bookStorageExample/book/BookService.o: bookStorageExample/book/BookService.cpp.o
+
+.PHONY : bookStorageExample/book/BookService.o
+
+# target to build an object file
+bookStorageExample/book/BookService.cpp.o:
+	$(MAKE) -f CMakeFiles/logs.dir/build.make CMakeFiles/logs.dir/bookStorageExample/book/BookService.cpp.o
+.PHONY : bookStorageExample/book/BookService.cpp.o
+
+bookStorageExample/book/BookService.i: bookStorageExample/book/BookService.cpp.i
+
+.PHONY : bookStorageExample/book/BookService.i
+
+# target to preprocess a source file
+bookStorageExample/book/BookService.cpp.i:
+	$(MAKE) -f CMakeFiles/logs.dir/build.make CMakeFiles/logs.dir/bookStorageExample/book/BookService.cpp.i
+.PHONY : bookStorageExample/book/BookService.cpp.i
+
+bookStorageExample/book/BookService.s: bookStorageExample/book/BookService.cpp.s
+
+.PHONY : bookStorageExample/book/BookService.s
+
+# target to generate assembly for a file
+bookStorageExample/book/BookService.cpp.s:
+	$(MAKE) -f CMakeFiles/logs.dir/build.make CMakeFiles/logs.dir/bookStorageExample/book/BookService.cpp.s
+.PHONY : bookStorageExample/book/BookService.cpp.s
+
 logger/Logger.o: logger/Logger.cpp.o
 
 .PHONY : logger/Logger.o
@@ -150,32 +258,86 @@ logger/Logger.cpp.s:
 	$(MAKE) -f CMakeFiles/logs.dir/build.make CMakeFiles/logs.dir/logger/Logger.cpp.s
 .PHONY : logger/Logger.cpp.s
 
-logger/LoggerFactory.o: logger/LoggerFactory.cpp.o
+logger/LoggerConfigurer.o: logger/LoggerConfigurer.cpp.o
 
-.PHONY : logger/LoggerFactory.o
+.PHONY : logger/LoggerConfigurer.o
 
 # target to build an object file
-logger/LoggerFactory.cpp.o:
-	$(MAKE) -f CMakeFiles/logs.dir/build.make CMakeFiles/logs.dir/logger/LoggerFactory.cpp.o
-.PHONY : logger/LoggerFactory.cpp.o
+logger/LoggerConfigurer.cpp.o:
+	$(MAKE) -f CMakeFiles/logs.dir/build.make CMakeFiles/logs.dir/logger/LoggerConfigurer.cpp.o
+.PHONY : logger/LoggerConfigurer.cpp.o
 
-logger/LoggerFactory.i: logger/LoggerFactory.cpp.i
+logger/LoggerConfigurer.i: logger/LoggerConfigurer.cpp.i
 
-.PHONY : logger/LoggerFactory.i
+.PHONY : logger/LoggerConfigurer.i
 
 # target to preprocess a source file
-logger/LoggerFactory.cpp.i:
-	$(MAKE) -f CMakeFiles/logs.dir/build.make CMakeFiles/logs.dir/logger/LoggerFactory.cpp.i
-.PHONY : logger/LoggerFactory.cpp.i
+logger/LoggerConfigurer.cpp.i:
+	$(MAKE) -f CMakeFiles/logs.dir/build.make CMakeFiles/logs.dir/logger/LoggerConfigurer.cpp.i
+.PHONY : logger/LoggerConfigurer.cpp.i
 
-logger/LoggerFactory.s: logger/LoggerFactory.cpp.s
+logger/LoggerConfigurer.s: logger/LoggerConfigurer.cpp.s
 
-.PHONY : logger/LoggerFactory.s
+.PHONY : logger/LoggerConfigurer.s
 
 # target to generate assembly for a file
-logger/LoggerFactory.cpp.s:
-	$(MAKE) -f CMakeFiles/logs.dir/build.make CMakeFiles/logs.dir/logger/LoggerFactory.cpp.s
-.PHONY : logger/LoggerFactory.cpp.s
+logger/LoggerConfigurer.cpp.s:
+	$(MAKE) -f CMakeFiles/logs.dir/build.make CMakeFiles/logs.dir/logger/LoggerConfigurer.cpp.s
+.PHONY : logger/LoggerConfigurer.cpp.s
+
+logger/config/Config.o: logger/config/Config.cpp.o
+
+.PHONY : logger/config/Config.o
+
+# target to build an object file
+logger/config/Config.cpp.o:
+	$(MAKE) -f CMakeFiles/logs.dir/build.make CMakeFiles/logs.dir/logger/config/Config.cpp.o
+.PHONY : logger/config/Config.cpp.o
+
+logger/config/Config.i: logger/config/Config.cpp.i
+
+.PHONY : logger/config/Config.i
+
+# target to preprocess a source file
+logger/config/Config.cpp.i:
+	$(MAKE) -f CMakeFiles/logs.dir/build.make CMakeFiles/logs.dir/logger/config/Config.cpp.i
+.PHONY : logger/config/Config.cpp.i
+
+logger/config/Config.s: logger/config/Config.cpp.s
+
+.PHONY : logger/config/Config.s
+
+# target to generate assembly for a file
+logger/config/Config.cpp.s:
+	$(MAKE) -f CMakeFiles/logs.dir/build.make CMakeFiles/logs.dir/logger/config/Config.cpp.s
+.PHONY : logger/config/Config.cpp.s
+
+logger/config/Property.o: logger/config/Property.cpp.o
+
+.PHONY : logger/config/Property.o
+
+# target to build an object file
+logger/config/Property.cpp.o:
+	$(MAKE) -f CMakeFiles/logs.dir/build.make CMakeFiles/logs.dir/logger/config/Property.cpp.o
+.PHONY : logger/config/Property.cpp.o
+
+logger/config/Property.i: logger/config/Property.cpp.i
+
+.PHONY : logger/config/Property.i
+
+# target to preprocess a source file
+logger/config/Property.cpp.i:
+	$(MAKE) -f CMakeFiles/logs.dir/build.make CMakeFiles/logs.dir/logger/config/Property.cpp.i
+.PHONY : logger/config/Property.cpp.i
+
+logger/config/Property.s: logger/config/Property.cpp.s
+
+.PHONY : logger/config/Property.s
+
+# target to generate assembly for a file
+logger/config/Property.cpp.s:
+	$(MAKE) -f CMakeFiles/logs.dir/build.make CMakeFiles/logs.dir/logger/config/Property.cpp.s
+.PHONY : logger/config/Property.cpp.s
 
 logger/distribution/ConsoleLogDistributor.o: logger/distribution/ConsoleLogDistributor.cpp.o
 
@@ -231,6 +393,60 @@ logger/distribution/FileLogDistributor.cpp.s:
 	$(MAKE) -f CMakeFiles/logs.dir/build.make CMakeFiles/logs.dir/logger/distribution/FileLogDistributor.cpp.s
 .PHONY : logger/distribution/FileLogDistributor.cpp.s
 
+logger/distribution/HttpLogDistributor.o: logger/distribution/HttpLogDistributor.cpp.o
+
+.PHONY : logger/distribution/HttpLogDistributor.o
+
+# target to build an object file
+logger/distribution/HttpLogDistributor.cpp.o:
+	$(MAKE) -f CMakeFiles/logs.dir/build.make CMakeFiles/logs.dir/logger/distribution/HttpLogDistributor.cpp.o
+.PHONY : logger/distribution/HttpLogDistributor.cpp.o
+
+logger/distribution/HttpLogDistributor.i: logger/distribution/HttpLogDistributor.cpp.i
+
+.PHONY : logger/distribution/HttpLogDistributor.i
+
+# target to preprocess a source file
+logger/distribution/HttpLogDistributor.cpp.i:
+	$(MAKE) -f CMakeFiles/logs.dir/build.make CMakeFiles/logs.dir/logger/distribution/HttpLogDistributor.cpp.i
+.PHONY : logger/distribution/HttpLogDistributor.cpp.i
+
+logger/distribution/HttpLogDistributor.s: logger/distribution/HttpLogDistributor.cpp.s
+
+.PHONY : logger/distribution/HttpLogDistributor.s
+
+# target to generate assembly for a file
+logger/distribution/HttpLogDistributor.cpp.s:
+	$(MAKE) -f CMakeFiles/logs.dir/build.make CMakeFiles/logs.dir/logger/distribution/HttpLogDistributor.cpp.s
+.PHONY : logger/distribution/HttpLogDistributor.cpp.s
+
+logger/message/DateTimeLogMessage.o: logger/message/DateTimeLogMessage.cpp.o
+
+.PHONY : logger/message/DateTimeLogMessage.o
+
+# target to build an object file
+logger/message/DateTimeLogMessage.cpp.o:
+	$(MAKE) -f CMakeFiles/logs.dir/build.make CMakeFiles/logs.dir/logger/message/DateTimeLogMessage.cpp.o
+.PHONY : logger/message/DateTimeLogMessage.cpp.o
+
+logger/message/DateTimeLogMessage.i: logger/message/DateTimeLogMessage.cpp.i
+
+.PHONY : logger/message/DateTimeLogMessage.i
+
+# target to preprocess a source file
+logger/message/DateTimeLogMessage.cpp.i:
+	$(MAKE) -f CMakeFiles/logs.dir/build.make CMakeFiles/logs.dir/logger/message/DateTimeLogMessage.cpp.i
+.PHONY : logger/message/DateTimeLogMessage.cpp.i
+
+logger/message/DateTimeLogMessage.s: logger/message/DateTimeLogMessage.cpp.s
+
+.PHONY : logger/message/DateTimeLogMessage.s
+
+# target to generate assembly for a file
+logger/message/DateTimeLogMessage.cpp.s:
+	$(MAKE) -f CMakeFiles/logs.dir/build.make CMakeFiles/logs.dir/logger/message/DateTimeLogMessage.cpp.s
+.PHONY : logger/message/DateTimeLogMessage.cpp.s
+
 logger/message/RawLogMessage.o: logger/message/RawLogMessage.cpp.o
 
 .PHONY : logger/message/RawLogMessage.o
@@ -257,6 +473,60 @@ logger/message/RawLogMessage.s: logger/message/RawLogMessage.cpp.s
 logger/message/RawLogMessage.cpp.s:
 	$(MAKE) -f CMakeFiles/logs.dir/build.make CMakeFiles/logs.dir/logger/message/RawLogMessage.cpp.s
 .PHONY : logger/message/RawLogMessage.cpp.s
+
+logger/util/DateTime.o: logger/util/DateTime.cpp.o
+
+.PHONY : logger/util/DateTime.o
+
+# target to build an object file
+logger/util/DateTime.cpp.o:
+	$(MAKE) -f CMakeFiles/logs.dir/build.make CMakeFiles/logs.dir/logger/util/DateTime.cpp.o
+.PHONY : logger/util/DateTime.cpp.o
+
+logger/util/DateTime.i: logger/util/DateTime.cpp.i
+
+.PHONY : logger/util/DateTime.i
+
+# target to preprocess a source file
+logger/util/DateTime.cpp.i:
+	$(MAKE) -f CMakeFiles/logs.dir/build.make CMakeFiles/logs.dir/logger/util/DateTime.cpp.i
+.PHONY : logger/util/DateTime.cpp.i
+
+logger/util/DateTime.s: logger/util/DateTime.cpp.s
+
+.PHONY : logger/util/DateTime.s
+
+# target to generate assembly for a file
+logger/util/DateTime.cpp.s:
+	$(MAKE) -f CMakeFiles/logs.dir/build.make CMakeFiles/logs.dir/logger/util/DateTime.cpp.s
+.PHONY : logger/util/DateTime.cpp.s
+
+logger/util/StringConverter.o: logger/util/StringConverter.cpp.o
+
+.PHONY : logger/util/StringConverter.o
+
+# target to build an object file
+logger/util/StringConverter.cpp.o:
+	$(MAKE) -f CMakeFiles/logs.dir/build.make CMakeFiles/logs.dir/logger/util/StringConverter.cpp.o
+.PHONY : logger/util/StringConverter.cpp.o
+
+logger/util/StringConverter.i: logger/util/StringConverter.cpp.i
+
+.PHONY : logger/util/StringConverter.i
+
+# target to preprocess a source file
+logger/util/StringConverter.cpp.i:
+	$(MAKE) -f CMakeFiles/logs.dir/build.make CMakeFiles/logs.dir/logger/util/StringConverter.cpp.i
+.PHONY : logger/util/StringConverter.cpp.i
+
+logger/util/StringConverter.s: logger/util/StringConverter.cpp.s
+
+.PHONY : logger/util/StringConverter.s
+
+# target to generate assembly for a file
+logger/util/StringConverter.cpp.s:
+	$(MAKE) -f CMakeFiles/logs.dir/build.make CMakeFiles/logs.dir/logger/util/StringConverter.cpp.s
+.PHONY : logger/util/StringConverter.cpp.s
 
 main.o: main.cpp.o
 
@@ -294,21 +564,51 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... logs"
+	@echo "... bookStorageExample/BookConfig.o"
+	@echo "... bookStorageExample/BookConfig.i"
+	@echo "... bookStorageExample/BookConfig.s"
+	@echo "... bookStorageExample/BookMain.o"
+	@echo "... bookStorageExample/BookMain.i"
+	@echo "... bookStorageExample/BookMain.s"
+	@echo "... bookStorageExample/book/Book.o"
+	@echo "... bookStorageExample/book/Book.i"
+	@echo "... bookStorageExample/book/Book.s"
+	@echo "... bookStorageExample/book/BookService.o"
+	@echo "... bookStorageExample/book/BookService.i"
+	@echo "... bookStorageExample/book/BookService.s"
 	@echo "... logger/Logger.o"
 	@echo "... logger/Logger.i"
 	@echo "... logger/Logger.s"
-	@echo "... logger/LoggerFactory.o"
-	@echo "... logger/LoggerFactory.i"
-	@echo "... logger/LoggerFactory.s"
+	@echo "... logger/LoggerConfigurer.o"
+	@echo "... logger/LoggerConfigurer.i"
+	@echo "... logger/LoggerConfigurer.s"
+	@echo "... logger/config/Config.o"
+	@echo "... logger/config/Config.i"
+	@echo "... logger/config/Config.s"
+	@echo "... logger/config/Property.o"
+	@echo "... logger/config/Property.i"
+	@echo "... logger/config/Property.s"
 	@echo "... logger/distribution/ConsoleLogDistributor.o"
 	@echo "... logger/distribution/ConsoleLogDistributor.i"
 	@echo "... logger/distribution/ConsoleLogDistributor.s"
 	@echo "... logger/distribution/FileLogDistributor.o"
 	@echo "... logger/distribution/FileLogDistributor.i"
 	@echo "... logger/distribution/FileLogDistributor.s"
+	@echo "... logger/distribution/HttpLogDistributor.o"
+	@echo "... logger/distribution/HttpLogDistributor.i"
+	@echo "... logger/distribution/HttpLogDistributor.s"
+	@echo "... logger/message/DateTimeLogMessage.o"
+	@echo "... logger/message/DateTimeLogMessage.i"
+	@echo "... logger/message/DateTimeLogMessage.s"
 	@echo "... logger/message/RawLogMessage.o"
 	@echo "... logger/message/RawLogMessage.i"
 	@echo "... logger/message/RawLogMessage.s"
+	@echo "... logger/util/DateTime.o"
+	@echo "... logger/util/DateTime.i"
+	@echo "... logger/util/DateTime.s"
+	@echo "... logger/util/StringConverter.o"
+	@echo "... logger/util/StringConverter.i"
+	@echo "... logger/util/StringConverter.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

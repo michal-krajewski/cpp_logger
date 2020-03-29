@@ -13,6 +13,7 @@
 
 using namespace std;
 
+enum LoggerType {CONSOLE_LOGGER, HTTP_LOGGER, FILE_LOGGER};
 
 class Logger {
 public:

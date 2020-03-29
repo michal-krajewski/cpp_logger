@@ -7,10 +7,9 @@
 
 #include <iostream>
 #include "Property.h"
+#include "../Logger.h"
 
 using namespace std;
-
-enum LoggerType {CONSOLE_LOGGER, HTTP_LOGGER, FILE_LOGGER};
 
 class Config {
 public:

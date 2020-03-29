@@ -2,8 +2,6 @@
 // Created by Atreses on 26/03/2020.
 //
 
-//#include <mach-o/dyld.h>
-
 #include <vector>
 #include "Config.h"
 
